@@ -6,7 +6,7 @@
     "dev": "next dev --webpack",
     "build": "prisma migrate deploy && next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
     "postinstall": "prisma generate",
   },
   "dependencies": {
