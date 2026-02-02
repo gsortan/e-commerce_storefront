@@ -28,7 +28,6 @@ export default function CartContextProvider({ children, initialItems = [] }) {
   }
 
   async function addToCart(product) {
-    console.log(product)
     const res = await addToCartAction(product);
     if (!res?.ok) return;
 

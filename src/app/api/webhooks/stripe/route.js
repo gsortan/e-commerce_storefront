@@ -39,7 +39,6 @@ export async function POST(req) {
       expand: ["line_items.data.price.product"],
     });
 
-
     const addr = fullSession.customer_details.address;
     const shipName = fullSession.customer_details.name;
 
@@ -50,7 +49,6 @@ export async function POST(req) {
       productId: Number(li.price.product.metadata.productId),
       quantity: li.quantity ?? 0,
       price: (li.price.unit_amount / 100).toFixed(2),
-
     }));
 
     const totalAmount = fullSession.amount_total / 100;
@@ -61,18 +59,16 @@ export async function POST(req) {
         items: orderItems,
         sessionId: fullSession.id,
         totalAmount,
-        shipName : shipName,
+        shipName: shipName,
         shipAddressLine1: addr.line1,
         shipAddressLine2: addr.line2,
         shipRegion: addr.state,
-        shipCity:addr.city,
-        shipCountry:addr.country,
-        shipPostalCode:addr.postal_code,
+        shipCity: addr.city,
+        shipCountry: addr.country,
+        shipPostalCode: addr.postal_code,
       });
 
       await clearCartForUser(userId);
-
-      console.log("Order created for session:", fullSession.id);
     } catch (e) {
       console.error("createOrder failed:", e?.message ?? e);
     }

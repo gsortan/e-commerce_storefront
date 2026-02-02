@@ -8,7 +8,6 @@ import { CartContext } from "../../cart/components/shopping-cart-context";
 export default function ProductDetails({ product }) {
   const { addToCart } = useContext(CartContext);
   const [quantity, setQuantity] = useState(1);
-  console.log(product)
 
   return (
     <div className="grid grid-cols-1 lg:grid-cols-[1fr_1fr] p-4 m-4">

@@ -7,7 +7,7 @@ import { currentUser } from "@clerk/nextjs/server";
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
 
 export async function createCheckout(cartItems) {
-  console.log(cartItems)
+
   const user = await currentUser();
   const session = await stripe.checkout.sessions.create({
     mode: "payment",

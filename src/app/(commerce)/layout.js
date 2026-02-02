@@ -22,9 +22,8 @@ export default async function StoreLayout({ children }) {
   return (
     <main>
       <CartContextProvider initialItems={initialItems}>
-        {" "}
         <NavBar user={parsedUser} />
-        {children}{" "}
+        {children}
       </CartContextProvider>
     </main>
   );

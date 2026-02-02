@@ -129,6 +129,5 @@ export async function clearCartAction() {
 }
 
 export async function clearCartForUser(userId) {
-  console.log(userId)
   await prisma.cartItem.deleteMany({ where: { userId } });
 }
