@@ -1,6 +1,6 @@
 # 🛍️ E-commerce Storefront
 
-A full-stack e-commerice storefront web application built with Next.js and Javascript. Users can browse products, search items, manage a shopping cart, and complete purchases through Stripe, with authentication handled by Clerk and data persisted using Prisma.
+A full-stack e-commerice storefront web application built with Next.js and Javascript. Users can browse products, search items, manage a shopping cart, and complete purchases through Stripe, with authentication handled by Clerk and data persisted using Prisma. They can also see there order history. 
 
 ## Demo Link:
 https://e-commercestorefrontprod.vercel.app
@@ -24,6 +24,7 @@ https://e-commercestorefrontprod.vercel.app
 - Prisma ORM
 - PostgreSQL
 - Stripe Checkout
+- Clerk Authentication
 
 ## 🛠️ Getting Started
 Create an account through Clerk authentication and then you can access store to purchase items. A Stripe test card number you can use for the checkout is: 4242 4242 4242 4242
