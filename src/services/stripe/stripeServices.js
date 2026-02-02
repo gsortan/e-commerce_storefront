@@ -15,7 +15,6 @@ export async function createCheckout(cartItems) {
     shipping_address_collection: {
       allowed_countries: ["CA", "US"],
     },
-    shipping_options: [{ shipping_rate: "shr_1Sq5D5P7W5Lv94Lo6PBH3dRi" }],
     metadata: {
       userId: user.id,
     },
