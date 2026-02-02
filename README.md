@@ -40,7 +40,6 @@ git clone https://github.com/gsortan/e-commerce_storefront.git
 npm install
 
 # Set up environment variables
-
 Create a .env file in the root directory and add the following variables:
 APP_BASE_URL=<your_app_base_url>
 DATABASE_URL=<your_database_url>
