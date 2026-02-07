@@ -4,8 +4,13 @@ import Image from "next/image";
 import shopBanner from "../../public/ShopLocal.png";
 import SearchBar from "./SearchBar";
 import ProfileDropdown from "./ProfileDropdown";
+import {Autocomplete, AutocompleteItem} from "@heroui/react";
+import { getAllProducts } from "@/services/product/productServices";
 
 export default async function NavBar({ user }) {
+
+  const products = getAllProducts();
+
   return (
     <>
       <div className="p-4 grid grid-cols-[auto_1fr_auto]  items-center bg-[#232f3e] shadow-md  sticky top-0 z-30">
@@ -25,7 +30,7 @@ export default async function NavBar({ user }) {
           
         "
         >
-          <SearchBar />
+           <SearchBar/>
         </div>
 
         <div className="flex items-center gap-4 col-start-3 row-start-1">
