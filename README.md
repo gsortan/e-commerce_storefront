@@ -17,6 +17,22 @@ https://e-commercestorefrontprod.vercel.app
 - Order history section with pagination
 - Mobile-first responsive design
 
+## 🔐 Admin Panel Features
+
+- Protected admin routes (role-based access via Clerk)
+- Admin dashboard with high-level store metrics
+
+Product management:
+
+- Create, edit, and update product details (title, price, stock, image, status)
+- Product search + filtering (by title/ID/status)
+- Setting product status
+
+Order management:
+
+- View all orders and dive into individual order details
+- Order list filtering and pagination 
+
 ## Tech Stack
 - Next.js
 - JavaScript
