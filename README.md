@@ -31,7 +31,7 @@ Product management:
 Order management:
 
 - View all orders and dive into individual order details
-- Order list filtering and pagination 
+- Order list filtering  
 
 ## Tech Stack
 - Next.js
