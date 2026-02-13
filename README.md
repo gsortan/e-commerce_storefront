@@ -42,6 +42,7 @@ Order management:
 - Stripe Checkout
 - Clerk Authentication
 - HeroUI
+- Headless UI
 
 ## 🛠️ Getting Started
 Create an account through Clerk authentication sign-up and then you can access the store to purchase items. A Stripe test card number you can use for the checkout is: 4242 4242 4242 4242
