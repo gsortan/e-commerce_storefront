@@ -31,7 +31,7 @@ Product management:
 Order management:
 
 - View all orders and dive into individual order details
-- Order list filtering  
+- Order list search where you can search by Id, customer name or customer email
 
 ## Tech Stack
 - Next.js
