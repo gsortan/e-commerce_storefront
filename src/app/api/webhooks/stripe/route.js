@@ -54,7 +54,7 @@ export async function POST(req) {
     const totalAmount = fullSession.amount_total / 100;
 
     try {
-      await createOrder({
+    const od =  await createOrder({
         userId,
         items: orderItems,
         sessionId: fullSession.id,
@@ -67,6 +67,7 @@ export async function POST(req) {
         shipCountry: addr.country,
         shipPostalCode: addr.postal_code,
       });
+      console.log(od);
 
       await clearCartForUser(userId);
     } catch (e) {

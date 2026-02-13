@@ -6,7 +6,7 @@ import { requireAdmin } from "@/lib/auth.js";
 import { requireUserId } from "@/lib/auth.js";
 
 export async function createOrder(order) {
-  await prisma.order.upsert({
+ const od = await prisma.order.upsert({
     where: { stripeSessionId: order.sessionId },
     update: {},
     create: {
@@ -23,6 +23,9 @@ export async function createOrder(order) {
       shipCountry: order.shipCountry,
     },
   });
+
+  console.log(od);
+  return od; 
 }
 
 export async function getLowestOrderYear() {

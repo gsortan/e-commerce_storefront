@@ -1,4 +1,3 @@
-// app/actions/createCheckout.js
 "use server";
 
 import Stripe from "stripe";
