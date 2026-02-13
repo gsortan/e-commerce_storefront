@@ -25,7 +25,7 @@ export async function createOrder(order) {
   });
 
   console.log(od);
-  return od; 
+  return od;
 }
 
 export async function getLowestOrderYear() {
