@@ -14,7 +14,7 @@ https://e-commercestorefrontprod.vercel.app
 - User authentication with Clerk
 - Secure checkout using Stripe
 - Checkout success page with order summary
-- Order history section with pagination
+- Order history section
 - Mobile-first responsive design
 
 ## 🔐 Admin Panel Features
